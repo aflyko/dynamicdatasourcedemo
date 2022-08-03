@@ -1,0 +1,24 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: danamicdatasource
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.16.10.19:3306/rcpr_uat_excusemeexcuseme_hello?characterEncoding=utf8&serverTimezone=GMT%2B8&allowMultiQueries=true&useSSL=false&useOldAliasMetadataBehavior=true&nullCatalogMeansCurrent=true
+    username: rc_dev_all
+    password: 6TjKFG9M746S
+aflyko:
+  extradatasources:
+    -
+      name: secondDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://172.16.10.19:3306/rcpr_uat_excusemeexcuseme_asdasd?characterEncoding=utf8&serverTimezone=GMT%2B8&allowMultiQueries=true&useSSL=false&useOldAliasMetadataBehavior=true&nullCatalogMeansCurrent=true
+      username: rc_dev_all
+      password: 6TjKFG9M746S
+    -
+      name: thirdDataSource
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://172.16.10.19:3306/rcpr_rd2_monday062701_mmm062701?characterEncoding=utf8&serverTimezone=GMT%2B8&allowMultiQueries=true&useSSL=false&useOldAliasMetadataBehavior=true&nullCatalogMeansCurrent=true
+      username: rc_dev_all
+      password: 6TjKFG9M746S
